@@ -1,0 +1,19 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 港式拼音 main dictionary
+#   = 朙月拼音 (luna_pinyin) + Hong Kong vocabulary (hk_pinyin.hk_terms)
+#
+# Add your own words to hk_pinyin.user_terms.dict.yaml
+# (created by the installer; survives upgrades).
+
+---
+name: hk_pinyin
+version: "1.0.0"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin
+  - hk_pinyin.hk_terms
+  - hk_pinyin.user_terms
+...

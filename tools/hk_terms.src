@@ -1,0 +1,392 @@
+# Source list for rime/hk_pinyin.hk_terms.dict.yaml
+# Format:  詞語 | pin yin | weight(optional, default 40000)
+# Regenerate with:  python3 tools/build_dict.py
+#
+# ── 常用 Common ──────────────────────────────────
+甚麼 | shen me | 90000
+為甚麼 | wei shen me | 90000
+# ── 交通 Transport ─────────────────────────────
+的士 | di shi | 80000
+的士站 | di shi zhan
+巴士 | ba shi | 80000
+巴士站 | ba shi zhan
+小巴 | xiao ba | 60000
+小巴站 | xiao ba zhan
+雙層巴士 | shuang ceng ba shi
+私家車 | si jia che | 60000
+電單車 | dian dan che | 60000
+單車 | dan che | 60000
+港鐵 | gang tie | 80000
+港鐵站 | gang tie zhan
+輕鐵 | qing tie | 60000
+電車 | dian che
+天星小輪 | tian xing xiao lun
+渡輪 | du lun
+八達通 | ba da tong | 80000
+月台 | yue tai | 60000
+油站 | you zhan | 60000
+停車場 | ting che chang
+迴旋處 | hui xuan chu
+行人路 | xing ren lu
+行人隧道 | xing ren sui dao
+交通燈 | jiao tong deng
+扶手電梯 | fu shou dian ti
+升降機 | sheng jiang ji | 60000
+泊車 | bo che | 60000
+車牌 | che pai
+# ── 政府機構 Government ─────────────────────────
+特首 | te shou | 60000
+行政長官 | xing zheng zhang guan
+政務司司長 | zheng wu si si zhang
+財政司司長 | cai zheng si si zhang
+律政司 | lv zheng si
+律政司司長 | lv zheng si si zhang
+立法會 | li fa hui | 80000
+立法會議員 | li fa hui yi yuan
+區議會 | qu yi hui | 60000
+區議員 | qu yi yuan
+行政會議 | xing zheng hui yi
+廉政公署 | lian zheng gong shu
+廉署 | lian shu
+入境處 | ru jing chu | 60000
+入境事務處 | ru jing shi wu chu
+運輸署 | yun shu shu
+消防處 | xiao fang chu
+警務處 | jing wu chu
+警署 | jing shu | 60000
+差館 | chai guan
+差餉 | chai xiang | 60000
+地政總署 | di zheng zong shu
+屋宇署 | wu yu shu
+房屋署 | fang wu shu
+康文署 | kang wen shu
+食環署 | shi huan shu
+衞生署 | wei sheng shu
+醫管局 | yi guan ju | 60000
+醫院管理局 | yi yuan guan li ju
+教育局 | jiao yu ju
+勞工處 | lao gong chu
+稅務局 | shui wu ju
+天文台 | tian wen tai | 80000
+社署 | she shu
+社會福利署 | she hui fu li shu
+強積金 | qiang ji jin | 80000
+綜援 | zong yuan | 60000
+身份證 | shen fen zheng | 80000
+回鄉證 | hui xiang zheng
+特區護照 | te qu hu zhao
+公眾假期 | gong zhong jia qi
+八號風球 | ba hao feng qiu
+十號風球 | shi hao feng qiu
+風球 | feng qiu | 60000
+黑雨 | hei yu | 60000
+紅雨 | hong yu
+黃雨 | huang yu
+# ── 住屋 Housing ────────────────────────────────
+屋邨 | wu cun | 80000
+公屋 | gong wu | 80000
+居屋 | ju wu | 80000
+屋苑 | wu yuan | 60000
+劏房 | tang fang | 60000
+大廈 | da sha | 60000
+樓盤 | lou pan
+首期 | shou qi | 60000
+按揭 | an jie | 60000
+業主 | ye zhu
+租客 | zu ke
+管理處 | guan li chu
+管理費 | guan li fei
+樓下 | lou xia
+# ── 家居 Home ───────────────────────────────────
+雪櫃 | xue gui | 80000
+冷氣 | leng qi | 60000
+冷氣機 | leng qi ji | 60000
+抽濕機 | chou shi ji
+熱水爐 | re shui lu
+電飯煲 | dian fan bao | 60000
+焗爐 | ju lu | 60000
+微波爐 | wei bo lu
+插蘇 | cha su | 60000
+拖板 | tuo ban
+光管 | guang guan
+洗衣機 | xi yi ji
+吸塵機 | xi chen ji | 60000
+# ── 飲食 Food ───────────────────────────────────
+茶餐廳 | cha can ting | 80000
+大排檔 | da pai dang
+飲茶 | yin cha | 60000
+點心 | dian xin | 8000
+叉燒 | cha shao | 60000
+叉燒包 | cha shao bao
+燒賣 | shao mai | 60000
+蝦餃 | xia jiao
+腸粉 | chang fen
+魚蛋 | yu dan | 60000
+碗仔翅 | wan zai chi
+雞蛋仔 | ji dan zai
+格仔餅 | ge zai bing
+菠蘿包 | bo luo bao
+菠蘿油 | bo luo you
+蛋撻 | dan ta | 60000
+奶茶 | nai cha
+絲襪奶茶 | si wa nai cha
+鴛鴦 | yuan yang
+檸檬茶 | ning meng cha
+凍檸茶 | dong ning cha
+多士 | duo shi | 5000
+西多士 | xi duo shi
+三文治 | san wen zhi | 80000
+三文魚 | san wen yu | 60000
+芝士 | zhi shi | 8000
+忌廉 | ji lian | 60000
+朱古力 | zhu gu li | 80000
+雪糕 | xue gao | 80000
+曲奇 | qu qi | 20000
+布甸 | bu dian | 60000
+啫喱 | zhe li | 5000
+薯條 | shu tiao | 60000
+薯片 | shu pian | 60000
+士多啤梨 | shi duo pi li
+車厘子 | che li zi | 60000
+奇異果 | qi yi guo
+菠蘿 | bo luo
+粟米 | su mi | 60000
+乳酪 | ru lao
+外賣 | wai mai
+堂食 | tang shi | 60000
+埋單 | mai dan | 60000
+找續 | zhao xu
+街市 | jie shi | 10000
+士多 | shi duo | 5000
+超級市場 | chao ji shi chang
+便利店 | bian li dian | 60000
+# ── 資訊科技 IT ─────────────────────────────────
+軟件 | ruan jian | 90000
+硬件 | ying jian | 90000
+網絡 | wang luo | 90000
+網頁 | wang ye
+網址 | wang zhi
+寬頻 | kuan pin | 80000
+數據 | shu ju | 80000
+數據庫 | shu ju ku | 80000
+數碼 | shu ma | 80000
+視像 | shi xiang | 60000
+視像會議 | shi xiang hui yi
+影片 | ying pian | 60000
+打印 | da yin | 80000
+打印機 | da yin ji | 80000
+檔案 | dang an | 80000
+文件夾 | wen jian jia
+伺服器 | si fu qi | 60000
+程式 | cheng shi | 15000
+應用程式 | ying yong cheng shi | 60000
+編程 | bian cheng | 10000
+介面 | jie mian | 60000
+預設 | yu she | 80000
+登入 | deng ru | 80000
+登出 | deng chu | 60000
+用戶 | yong hu | 80000
+用戶名稱 | yong hu ming cheng
+帳戶 | zhang hu | 60000
+帳號 | zhang hao
+密碼 | mi ma
+支援 | zhi yuan | 80000
+資訊 | zi xun | 7000
+資訊科技 | zi xun ke ji | 60000
+電郵 | dian you | 90000
+電郵地址 | dian you di zhi
+短訊 | duan xun | 80000
+手提電話 | shou ti dian hua | 60000
+智能手機 | zhi neng shou ji | 60000
+智能 | zhi neng | 15000
+人工智能 | ren gong zhi neng | 80000
+滑鼠 | hua shu | 60000
+熒幕 | ying mu | 60000
+充電器 | chong dian qi
+記憶卡 | ji yi ka
+雲端 | yun duan
+上載 | shang zai | 80000
+下載 | xia zai | 80000
+連結 | lian jie | 10000
+網誌 | wang zhi | 3000
+質素 | zhi su | 60000
+# ── 金錢 Money ──────────────────────────────────
+港元 | gang yuan | 80000
+港幣 | gang bi | 60000
+毫子 | hao zi
+銀包 | yin bao | 60000
+戶口 | hu kou | 60000
+銀行戶口 | yin hang hu kou
+提款機 | ti kuan ji | 60000
+收據 | shou ju | 60000
+單據 | dan ju
+入數 | ru shu | 60000
+過數 | guo shu
+支票 | zhi piao
+人工 | ren gong
+糧單 | liang dan
+出糧 | chu liang | 60000
+# ── 工作學習 Work & school ─────────────────────
+返工 | fan gong | 80000
+放工 | fang gong | 80000
+返學 | fan xue | 80000
+放學 | fang xue
+打工仔 | da gong zai
+老細 | lao xi | 60000
+同事 | tong shi | 15000
+文憑試 | wen ping shi | 60000
+中學文憑試 | zhong xue wen ping shi
+補習社 | bu xi she
+幼稚園 | you zhi yuan
+貼士 | tie shi | 60000
+菲林 | fei lin
+# ── 地名 Places ─────────────────────────────────
+香港 | xiang gang | 99000
+新界 | xin jie | 80000
+九龍 | jiu long | 80000
+港島 | gang dao | 60000
+香港島 | xiang gang dao
+離島 | li dao
+中環 | zhong huan | 60000
+上環 | shang huan
+西環 | xi huan | 2000
+金鐘 | jin zhong
+灣仔 | wan zai | 60000
+銅鑼灣 | tong luo wan
+跑馬地 | pao ma di
+北角 | bei jiao
+鰂魚涌 | zei yu chong
+太古 | tai gu
+筲箕灣 | shao ji wan
+柴灣 | chai wan
+香港仔 | xiang gang zai
+薄扶林 | bo fu lin
+堅尼地城 | jian ni di cheng
+赤柱 | chi zhu
+淺水灣 | qian shui wan
+尖沙咀 | jian sha ju | 60000
+佐敦 | zuo dun
+油麻地 | you ma di
+旺角 | wang jiao | 60000
+太子 | tai zi
+深水埗 | shen shui bu
+長沙灣 | chang sha wan
+荔枝角 | li zhi jiao
+美孚 | mei fu
+九龍塘 | jiu long tang
+何文田 | he wen tian
+紅磡 | hong kan
+土瓜灣 | tu gua wan
+啟德 | qi de
+黃大仙 | huang da xian
+鑽石山 | zuan shi shan
+樂富 | le fu
+九龍灣 | jiu long wan
+牛頭角 | niu tou jiao
+觀塘 | guan tang
+藍田 | lan tian
+油塘 | you tang
+將軍澳 | jiang jun ao
+調景嶺 | tiao jing ling
+坑口 | keng kou
+寶琳 | bao lin
+西貢 | xi gong
+沙田 | sha tian | 60000
+大圍 | da wei
+火炭 | huo tan
+馬鞍山 | ma an shan
+大埔 | da bu
+粉嶺 | fen ling
+上水 | shang shui
+羅湖 | luo hu
+落馬洲 | luo ma zhou
+元朗 | yuan lang
+天水圍 | tian shui wei
+屯門 | tun men
+荃灣 | quan wan
+葵涌 | kui chong
+葵芳 | kui fang
+青衣 | qing yi
+東涌 | dong chong
+大嶼山 | da yu shan
+赤鱲角 | chi la jiao
+長洲 | chang zhou
+南丫島 | nan ya dao
+澳門 | ao men
+# ── 口語字 Written Cantonese characters ─────────
+嘅 | ge | 90000
+咗 | zuo | 80000
+喺 | xi | 80000
+唔 | wu | 80000
+冇 | mao | 80000
+佢 | qu | 80000
+哋 | di | 80000
+啲 | di | 70000
+嘢 | ye | 80000
+睇 | di | 70000
+搵 | wen | 70000
+畀 | bi | 60000
+俾 | bi | 50000
+乜 | mie | 60000
+咩 | mie | 70000
+係 | xi | 70000
+嚟 | li | 70000
+攰 | gui | 60000
+靚 | liang | 60000
+瞓 | fen | 60000
+揸 | zha | 60000
+嗰 | ge | 70000
+咁 | gan | 70000
+噉 | gan | 50000
+囉 | luo | 50000
+喎 | wo | 50000
+啩 | gua | 40000
+㗎 | ga | 50000
+嘞 | lei | 40000
+嘥 | sai | 40000
+諗 | shen | 60000
+攞 | luo | 60000
+啱 | an | 2000
+冚 | kan | 40000
+唞 | tou | 40000
+撳 | qin | 40000
+咪 | mi | 40000
+啫 | ze | 30000
+# ── 口語詞 Cantonese phrases ────────────────────
+唔該 | wu gai | 80000
+唔該晒 | wu gai shai
+多謝晒 | duo xie shai
+唔好 | wu hao | 70000
+唔使 | wu shi | 60000
+唔係 | wu xi | 70000
+唔知 | wu zhi | 6000
+係咪 | xi mi | 60000
+冇問題 | mao wen ti | 60000
+冇嘢 | mao ye
+我哋 | wo di | 80000
+你哋 | ni di | 80000
+佢哋 | qu di | 80000
+而家 | er jia | 60000
+呢度 | ni du
+嗰度 | ge du
+邊度 | bian du
+點樣 | dian yang | 60000
+點解 | dian jie | 60000
+乜嘢 | mie ye
+咩嘢 | mie ye
+搞掂 | gao dian | 60000
+早晨 | zao chen | 60000
+瞓覺 | fen jiao
+食飯 | shi fan | 60000
+屋企 | wu qi | 6000
+頭先 | tou xian
+琴日 | qin ri
+尋日 | xun ri
+聽日 | ting ri | 60000
+今朝 | jin zhao
+聽朝 | ting zhao
+靚仔 | liang zai
+靚女 | liang nv
+傾偈 | qing ji
+等陣 | deng zhen
+一陣 | yi zhen

@@ -1,0 +1,10 @@
+{
+  "name": "HK Pinyin: inherited glyphs to the forms used in Hong Kong",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": { "type": "text", "file": "hk_glyph.txt" }
+  },
+  "conversion_chain": [
+    { "dict": { "type": "text", "file": "hk_glyph.txt" } }
+  ]
+}

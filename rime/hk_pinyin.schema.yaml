@@ -1,0 +1,159 @@
+# Rime schema
+# encoding: utf-8
+#
+# 港式拼音 HK Pinyin
+#   Traditional Chinese (Hong Kong) input with Hanyu Pinyin,
+#   modelled on the macOS "Pinyin – Traditional" input source.
+#
+#   * Characters follow the Hong Kong glyph standard (OpenCC t2hk)
+#   * Vocabulary follows Hong Kong usage (軟件, 網絡, 的士, 雪櫃 …)
+#   * Punctuation follows Hong Kong practice (「」『』、，。……——)
+#   * rq / sj / xq / dt give dates and times in Hong Kong formats
+#
+# Built on Rime's 朙月拼音 (luna_pinyin) dictionary.
+
+schema:
+  schema_id: hk_pinyin
+  name: 港式拼音
+  version: "1.0.0"
+  author:
+    - hk-pinyin-ime project
+  description: |
+    繁體中文（香港）漢語拼音輸入法。
+    香港字形、香港詞彙、香港標點，操作仿 macOS「拼音 – 繁體」。
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中, Ａ ]
+  - name: full_shape
+    reset: 0
+    states: [ 半形, 全形 ]
+  - name: hk_glyph
+    reset: 1
+    states: [ 傳承字形, 香港字形 ]
+  - name: hk_terms
+    reset: 1
+    states: [ 通用詞彙, 香港詞彙 ]
+  - name: ascii_punct
+    reset: 0
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - lua_translator@*hk_datetime
+    - script_translator
+  filters:
+    - lua_filter@*hk_terms_filter
+    - simplifier@hk_glyph
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    __patch:
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
+
+translator:
+  dictionary: hk_pinyin
+  prism: hk_pinyin
+  enable_user_dict: true
+  enable_sentence: true
+  enable_completion: true
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+# Mainland / Taiwan vocabulary → Hong Kong vocabulary is done by
+# lua/hk_terms_filter.lua with opencc/hk_terms.txt: the Hong Kong term
+# comes first and the original stays as the next candidate
+# (bingxiang → 雪櫃 | 冰箱). Toggle: 香港詞彙 (option hk_terms).
+
+# Converts the dictionary's inherited glyphs to the forms people type
+# in Hong Kong (爲 → 為, 衛 → 衞, 綫 → 線, 檯 → 枱 …), keeping common
+# Big5 code points such as 戶 說 稅 so text matches HK websites and
+# government documents. Toggle: 香港字形.
+# For the strict 常用字字形表 forms (户 説 税 …) use t2hk.json instead
+# in hk_pinyin.custom.yaml (see the manual).
+hk_glyph:
+  opencc_config: hk_glyph.json
+  option_name: hk_glyph
+  tips: none
+
+punctuator:
+  import_preset: default
+  half_shape:
+    ",": "，"
+    ".": "。"
+    "<": [ "《", "〈", "«", "<" ]
+    ">": [ "》", "〉", "»", ">" ]
+    "/": [ "／", "÷", "/" ]
+    "?": "？"
+    ";": "；"
+    ":": "："
+    "'": { pair: [ "『", "』" ] }
+    "\"": { pair: [ "「", "」" ] }
+    "\\": "、"
+    "|": [ "·", "｜", "|" ]
+    "`": [ "`", "‧" ]
+    "~": "～"
+    "!": "！"
+    "@": "@"
+    "#": "#"
+    "%": [ "%", "％", "‰" ]
+    "$": [ "$", "HK$", "¥", "€", "£" ]
+    "^": "……"
+    "&": "&"
+    "*": [ "*", "×", "※" ]
+    "(": "（"
+    ")": "）"
+    "-": "-"
+    "_": "——"
+    "+": "+"
+    "=": "="
+    "[": "「"
+    "]": "」"
+    "{": "『"
+    "}": "』"
+  symbols:
+    __include: symbols:/punctuator/symbols
+
+key_binder:
+  import_preset: default
+  bindings:
+    # macOS-style paging: - / = and Tab
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: has_menu, accept: Tab, send: Page_Down }
+    - { when: has_menu, accept: Shift+Tab, send: Page_Up }
+    # quick toggles
+    - { when: always, accept: Control+period, toggle: ascii_punct }
+    - { when: always, accept: Shift+space, toggle: full_shape }
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"

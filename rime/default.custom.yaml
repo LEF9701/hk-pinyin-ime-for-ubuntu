@@ -1,0 +1,32 @@
+# Rime global settings for 港式拼音 (installed by hk-pinyin-ime)
+# encoding: utf-8
+
+patch:
+  schema_list:
+    - schema: hk_pinyin
+
+  # Candidates per page (macOS shows a single row of up to 9)
+  menu/page_size: 9
+
+  # Schema / option menu: Ctrl+` or F4
+  switcher/caption: 〔港式拼音〕
+  switcher/hotkeys:
+    - Control+grave
+    - F4
+  switcher/save_options:
+    - full_shape
+    - ascii_punct
+    - hk_glyph
+    - hk_terms
+
+  # macOS-like Chinese/English behaviour:
+  #   * tap Shift to switch to English; typed letters are committed as-is
+  #   * Caps Lock types capital English letters without leaving the IME
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Shift_L: commit_code
+    Shift_R: commit_code
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: clear
+    Eisu_toggle: clear

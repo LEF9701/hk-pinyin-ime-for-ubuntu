@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="640" viewBox="0 0 1240 640">
+<defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#6e6e73"/>
+  </marker>
+  <filter id="sh" x="-10%" y="-30%" width="120%" height="170%">
+    <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.16"/>
+  </filter>
+</defs>
+<rect width="1240" height="640" fill="#ffffff"/>
+<text x="40" y="52" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="26" font-weight="700" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >How 港式拼音 turns pinyin into Hong Kong Chinese</text>
+<text x="40" y="82" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="16" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >Example: you type  bingxiang  (fridge)</text>
+<rect x="40" y="110" width="360" height="150" rx="14" fill="#f5f5f7" stroke="#d2d2d7" stroke-width="1.2" />
+<text x="60" y="142" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="15" font-weight="700" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >1  You type</text>
+<text x="60" y="190" font-family="'DejaVu Sans Mono', 'Noto Sans CJK HK', monospace" font-size="26" font-weight="600" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >bingxiang</text>
+<text x="60" y="222" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >keyboard</text>
+<line x1="402" y1="185" x2="438" y2="185" stroke="#6e6e73" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="440" y="110" width="360" height="150" rx="14" fill="#f5f5f7" stroke="#d2d2d7" stroke-width="1.2" />
+<text x="460" y="142" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="15" font-weight="700" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >2  Speller</text>
+<text x="460" y="190" font-family="'DejaVu Sans Mono', 'Noto Sans CJK HK', monospace" font-size="26" font-weight="600" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >bing · xiang</text>
+<text x="460" y="222" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >splits into syllables,</text>
+<text x="460" y="242" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >allows initials (bx)</text>
+<line x1="802" y1="185" x2="838" y2="185" stroke="#6e6e73" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="840" y="110" width="360" height="150" rx="14" fill="#eaf3ff" stroke="#007aff" stroke-width="1.2" />
+<text x="860" y="142" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="15" font-weight="700" fill="#007aff" text-anchor="start" xml:space="preserve" >3  Dictionary</text>
+<text x="860" y="190" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="26" font-weight="600" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >冰箱  並向  病象 …</text>
+<text x="860" y="222" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >luna_pinyin + 376 HK</text>
+<text x="860" y="242" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >words + your words</text>
+<line x1="1060" y1="262" x2="1060" y2="300" stroke="#6e6e73" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="640" y="302" width="560" height="150" rx="14" fill="#e8f6ec" stroke="#248a3d" stroke-width="1.2" />
+<text x="660" y="334" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="15" font-weight="700" fill="#248a3d" text-anchor="start" xml:space="preserve" >4  Hong Kong vocabulary filter</text>
+<text x="660" y="380" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="26" font-weight="600" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >冰箱  →  雪櫃  |  冰箱</text>
+<text x="660" y="414" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >HK term goes first, the original stays right after it.</text>
+<text x="660" y="434" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >軟體→軟件 · 網路→網絡 · 計程車→的士 · 什麼→甚麼</text>
+<line x1="638" y1="377" x2="602" y2="377" stroke="#6e6e73" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="40" y="302" width="560" height="150" rx="14" fill="#fff1e5" stroke="#c75300" stroke-width="1.2" />
+<text x="60" y="334" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="15" font-weight="700" fill="#c75300" text-anchor="start" xml:space="preserve" >5  Hong Kong character filter</text>
+<text x="60" y="380" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="26" font-weight="600" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >爲 → 為  ·  衛 → 衞  ·  綫 → 線</text>
+<text x="60" y="414" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >Inherited forms become the forms used in Hong Kong.</text>
+<text x="60" y="434" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >Keeps Big5 code points 戶 說 稅, like HK websites.</text>
+<line x1="320" y1="454" x2="320" y2="492" stroke="#6e6e73" stroke-width="2" marker-end="url(#ah)"/>
+<text x="40" y="520" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="15" font-weight="700" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >6  macOS-style candidate window</text>
+<rect x="40" y="540" width="376" height="46" rx="11" fill="#fbfbfd" stroke="#00000022" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="50" y="546" width="68" height="34" rx="7" fill="#007aff" stroke="none" stroke-width="1.2" />
+<text x="84.0" y="570" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="17" font-weight="400" fill="#fff" text-anchor="middle" xml:space="preserve" >1 雪櫃</text>
+<text x="156.0" y="570" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="17" font-weight="400" fill="#1d1d1f" text-anchor="middle" xml:space="preserve" >2 冰箱</text>
+<text x="228.0" y="570" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="17" font-weight="400" fill="#1d1d1f" text-anchor="middle" xml:space="preserve" >3 並向</text>
+<text x="300.0" y="570" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="17" font-weight="400" fill="#1d1d1f" text-anchor="middle" xml:space="preserve" >4 病象</text>
+<text x="372.0" y="570" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="17" font-weight="400" fill="#1d1d1f" text-anchor="middle" xml:space="preserve" >5 兵餉</text>
+<text x="560" y="570" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="18" font-weight="600" fill="#1d1d1f" text-anchor="start" xml:space="preserve" >Space → 雪櫃      2 → 冰箱</text>
+<text x="560" y="596" font-family="Inter, 'Noto Sans CJK HK', sans-serif" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start" xml:space="preserve" >Rime remembers what you choose and ranks it higher next time.</text>
+</svg>

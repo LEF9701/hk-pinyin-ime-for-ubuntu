@@ -1,0 +1,20 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 港式拼音 — your own words.
+#
+# One entry per line:  詞語<Tab>pin yin<Tab>weight
+# Pinyin has no tones, syllables separated by a space, ü written as v.
+# A weight of 50000 or more puts the word ahead of most homophones.
+# After editing, choose "Deploy / 重新部署" from the fcitx5 tray menu.
+#
+# Examples (remove the leading # to enable):
+# 長洲太平清醮	chang zhou tai ping qing jiao	50000
+# 我公司名	wo gong si ming	50000
+
+---
+name: hk_pinyin.user_terms
+version: "1"
+sort: by_weight
+use_preset_vocabulary: false
+...
